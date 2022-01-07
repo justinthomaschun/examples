@@ -1,0 +1,140 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+brought to you by people who want you to be able to use computers
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                 _                 _        _   
+  ___ ___  _ __ ___  _ __  _   _| |_ ___ _ __ ___ | |___  _| |_ 
+ / __/ _ \| '_ ` _ \| '_ \| | | | __/ _ \ '__/ __|| __\ \/ / __|
+| (_| (_) | | | | | | |_) | |_| | ||  __/ |  \__ \| |_ >  <| |_ 
+ \___\___/|_| |_| |_| .__/ \__,_|\__\___|_|  |___(_)__/_/\_\\__|
+                    |_|                                         
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+last edits made by jtc, 07.I.21
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+README
+======
+this document is designed to get people acquainted with computers!
+
+contents: curl, >,
+whoami, pwd, history, ls, cd, mkdir, rmdir,
+touch, cat, tac, echo, vim, vimtutor, rm,
+htop, cal, firefox, grep, shutdown
+
+TO BEGIN
+========
+
+you're probably reading this in a github browsing window. lame!
+you can grab a fresh file using this command:
+
+curl URL > computers.txt
+
+where the URL in this case would be
+https://raw.githubusercontent.com/
+justinthomaschun/examples/main/computers.txt
+
+the curl command transfers file data directly into the terminal.
+
+the > here takes the output of the previous command and
+writes it to the file computers.txt. you could call that file
+derp.420 if you want to. it just isn't helpful.
+
+WAIT, WHO AND WHERE ARE WE?
+===========================
+
+if you're on the command line following along (please do),
+you can answer the who question using this command:
+
+whoami
+
+you can answer the where question using this command:
+
+pwd
+
+(this is short for Print Working Directory).
+you can also check out previous commands using:
+
+history
+
+so basically you are a user, inspecting a directory.
+you can list the contents of your directory using
+
+ls DIR
+
+and change the current directory to one of the ones in ls using
+
+cd DIR
+
+and make a new directory using
+
+mkdir DIR
+
+and remove an empty directory using
+
+rmdir DIR
+
+the thing to remember about unix is that EVERYTHING IS A FILE,
+and directories are just files that can contain other files.
+you're always on some node in a tree of directories.
+
+FILES
+=====
+
+you can create a file using:
+
+touch FILE
+
+you can print the contents of a file using:
+
+cat FILE
+
+you can print the contents backwards (last line first) using:
+
+tac FILE
+
+you can print a string of characters to the terminal using:
+
+echo STR
+
+chaining these together, you can make an arbitrary file using:
+
+echo "this string of characters is important!" > important.txt
+
+in order to edit files, use vim. if you are unfamiliar, try:
+
+vimtutor
+
+you can remove a file using:
+
+rm FILE
+
+BONUS CONTENT
+=============
+
+you can see everything going on in your computer using:
+
+htop
+
+you can get a helpful six month calendar using:
+
+cal -n 6
+
+nowadays, you can use a web browser for media:
+
+firefox IMPORTANT-IMAGE.jpg
+
+you can search through large files using
+
+ls FILE | grep "STR"
+
+the | pipes the output from ls into the input for grep.
+
+finally, if your permissions are set up correctly, this should work:
+
+shutdown now
+
+
+
+
+
+
